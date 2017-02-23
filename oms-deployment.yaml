@@ -1,18 +1,20 @@
+--- 
 apiVersion: extensions/v1beta1
 kind: Deployment
-metadata:
+metadata: 
   name: oms
-  spec:
+  spec: 
     replicas: 3
-    template:
-      metadata:
-        labels:
+    template: 
+      metadata: 
+        labels: 
           app: web
-          spec:
-            containers:
-              - name: oms
+          spec: 
+            containers: 
+              - 
                 image: yhruntc/oms
-                ports:
+                name: oms
+                ports: 
                   - containerPort: 8080
 
     
